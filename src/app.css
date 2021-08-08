@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+a {
+    color: #333;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+h2.heading-notes-page {
+    max-width: 400px;
+    word-break: break-all;
+}
+.add-note > button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.add-note > button::before {
+    content: "";
+    top: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 25px;
+    border-bottom: solid black 1px;
+}
+.add-note > button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+    border-left: solid #333 1px;
+}
+form {
+    display: flex;
+    align-items: flex-start;
+}
+form button {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+form button::before{
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    transform: rotate(-45deg);
+    height: 10px;
+    border-left: solid 1px #333;
+}
+form button::after{
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 19px;
+    transform: rotate(45deg);
+    height: 20px;
+    border-left: solid 2px #333;
+}
+textarea {
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15px;
+    padding: 5px;
+    resize: none;
+}
+textarea:nth-of-type(2) {
+    resize: auto;
+    min-height: 150px;
+    max-height: 250px;
+    max-width: 250px;
+    min-width: 157px;
+}
+input {
+    margin-right: 15px;
+    height: 30px;
+    padding: 5px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    border: none;
+}
+/* header */
+
+ul {
+    list-style: none;
+}
+.wrapper > .container {
+    margin-bottom: 20px;
+}
+h4 {
+   text-align: center;
+}
+.container .item {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+.name a {
+    overflow: scroll;
+    height: 50px;
+    display: block;
+    word-break: break-all;
+    font-size: 21px;
+}
+.notes-items > li {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    border: solid #dbc9ff 1px;
+    border-radius: 5px;
+}
+.information {
+    display: flex;
+    flex: 1 1 auto;
+}
+.note-info li{
+    word-break: break-all;
+    max-height: 50px;
+    overflow: scroll;
+}
+.note-date {
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.logo {
+    display: flex;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: solid 1px #333;
+    background-color: #BEAEE2;
+    border-radius: 5px;
+}
+
+.wrapper {
+    margin: auto;
+   background-color: #CDF0EA;
+   max-width: 800px;
+   padding: 20px;
+   border-radius: 3px;
+}
+button {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #BEAEE2;
+    margin-right: 5px;
+    transition: .3s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #d6cbef;
+}
+button[disabled] {
+    background-color: #e1dced;
+    cursor: no-drop;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer button {
+    margin: 5px;
+}
+/* page 2 */
+.container.page-2 input {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.container.page-2 ul li {
+    display: flex;
+    margin-bottom: 20px;
+    transition: background-color .2s;
+}
+.container.page-2 ul li:hover{
+    cursor: pointer;
+    background-color: #b6bbff;
+}
+.container.page-2 ul li p {
+    margin-right: 10px;
+}
+.container.page-2 ul li p::first-letter {
+    text-transform: uppercase;
+}
+@media (max-width: 540px) {
+    header {
+        flex-direction: column;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    form {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 450px) {
+    label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    label input {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .notes-items > li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .delete-note {
+        margin: 0 0 0 auto;
+    }
+}
