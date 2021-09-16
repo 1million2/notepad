@@ -125,7 +125,8 @@ export default {
       if (day < 10) {
         day = "0" + (day + 1);
       }
-      this.postFullDate = (hours + ":" + minutes + " " + day + "." + month + "." + year);
+      this.postFullDate =
+        hours + ":" + minutes + " " + day + "." + month + "." + year;
     },
     pagnation() {
       // пагинация и отображение 6 эл. на странице
