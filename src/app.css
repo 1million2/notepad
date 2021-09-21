@@ -113,6 +113,8 @@ h4 {
     display: block;
     word-break: break-all;
     font-size: 21px;
+    color: blueviolet;
+    text-decoration: underline;
 }
 .notes-items > li {
     display: flex;
