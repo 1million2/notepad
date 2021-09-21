@@ -61,7 +61,7 @@
           <div class="information">
             <ul class="note-info">
               <li>{{ note.text }}</li>
-              <li class="note-date">создан: {{ note.createDate }}</li>
+              <li class="note-date">создан в: {{ note.createDate }}</li>
               <li class="note-date">ред: {{ note.changesDate }}</li>
             </ul>
           </div>
@@ -109,11 +109,12 @@ export default {
     }
   },
   methods: {
+    // получение даты и времени
     getDate() {
       let date = new Date();
       let year = date.getFullYear();
       let month = date.getMonth() + 1;
-      let day = date.getDay();
+      let day = date.getDate();
       let hours = date.getHours();
       let minutes = date.getMinutes();
       if (minutes < 10) {
