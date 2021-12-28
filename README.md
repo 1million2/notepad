@@ -1,4 +1,5 @@
 # note-pad SPA
+![screenshot](https://github.com/1million2/notepad/blob/main/Снимок%20экрана%202021-12-28%20в%2020.09.24.png?raw=true)
 
 ## Project setup
 ```
@@ -6,21 +7,5 @@ douwnload files
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
