@@ -1,6 +1,8 @@
-# contacts-app
+# note-pad SPA
 
 ## Project setup
+```
+douwnload files
 ```
 npm install
 ```
